@@ -3,8 +3,8 @@ pipeline {
 
     stages {
         stage('Build') {
-            //steps {
-                //sh 'g++ temp.cpp -o temp'
+            steps {
+                sh 'g++ error -o error'
                  build job: 'PES1UG20CS154-1', wait: false
                  echo 'Build by CS154 successful'
             }
